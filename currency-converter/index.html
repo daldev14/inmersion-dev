@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1 class="page-title">Conversor de monedas</h1>
+        <img
+          src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png"
+          class="page-logo"
+          alt="" />
+
+        <section class="input-grid">
+          <!--  -->
+          <div class="group grid__group-1">
+            <div class="input-group">
+              <label for="fromCurrency">From</label>
+              <select class="input" name="fromCurrency" id="fromCurrency">
+                <option value="BRL">Real brasilero</option>
+                <option value="EUR">Euro</option>
+                <option value="HNL" selected>Lempira</option>
+                <option value="USD">Dólar estadounidense</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="amount">From</label>
+              <input class="input" type="number" name="amount" id="amount" />
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="group grid__group-2">
+            <div class="input-group">
+              <label for="toCurrency">To</label>
+              <select class="input" name="toCurrency" id="toCurrency">
+                <option value="BRL" selected>Real brasilero</option>
+                <option value="EUR">Euro</option>
+                <option value="HNL">Lempira</option>
+                <option value="USD">Dólar estadounidense</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="convertedAmount">To</label>
+              <input
+                class="input"
+                type="number"
+                name="convertedAmount"
+                id="convertedAmount" />
+            </div>
+          </div>
+        </section>
+      </section>
+      <img
+        src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png" />
+
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img
+          src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg"
+          alt=""
+          class="alura-latam-logo" />
+      </a>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

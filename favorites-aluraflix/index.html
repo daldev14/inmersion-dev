@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="page-title">Aluraflix</h1>
+        <img
+          src="https://user-images.githubusercontent.com/121910576/257301160-11f2dba6-23f2-4a8a-8c14-10ca8825acc8.png"
+          class="page-logo"
+          alt=""
+        />
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="page-subtitle">Agrega tus películas favoritas</h2>
+      <div class="form-wrapper">
+        <form class="form" id="form">
+          <div class="form__inputs">
+            <input
+              type="text"
+              id="movieName"
+              name="movieName"
+              class="movie__name"
+              placeholder="Agregue el nombre"
+              required
+            />
+
+            <input
+              type="url"
+              id="moviePoster"
+              name="moviePoster"
+              placeholder="Agregue la dirección de la imagen"
+              required
+            />
+
+            <input
+              type="url"
+              id="movieTrailer"
+              name="movieTrailer"
+              placeholder="Agregue la dirección del trailer"
+              required
+            />
+          </div>
+
+          <button class="form__button">Agregar película</button>
+        </form>
+      </div>
+
+      <p class="error__message hidden" id="errorMessage">
+        Solo se permiten imagenes .jpg y .jpeg. Y videos de youtube.
+      </p>
+      <section class="movie__container" id="movieContainer"></section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

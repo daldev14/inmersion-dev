@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="page__title">Mentalista</h1>
+      <img
+        src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png"
+        class="page__logo"
+        alt=""
+      />
+    </header>
+    <main class="main">
+      <!-- pantalla inicial -->
+      <section class="start__game" id="startGame">
+        <label class="cyberpunk-checkbox-label" for="inputAttempts">
+          <input
+            type="checkbox"
+            class="cyberpunk-checkbox"
+            name="inputAttempts"
+            id="inputAttempts"
+          />
+          Intentos limitados
+        </label>
+        <button class="play__button" id="playButton">Jugar</button>
+      </section>
+
+      <!-- pantalla del juego -->
+      <section class="game hidden" id="game">
+        <div>
+          <p class="game__title">Adivina el número entre 1 y 100</p>
+          <p class="game__attempts" id="gameAttempts"></p>
+        </div>
+        <form class="game__form" id="gameForm">
+          <div class="form__container">
+            <div class="group">
+              <label for="userInput">Número</label>
+              <input
+                type="text"
+                class="form__input"
+                name="userInput"
+                id="userInput"
+                placeholder="Ingresa un número entre el 1 y 100"
+              />
+            </div>
+            <button class="form__button play__button">Adivinar</button>
+          </div>
+        </form>
+        <p class="game__message" id="gameMessage"></p>
+      </section>
+
+      <!-- pantalla del juego final -->
+      <section class="end__game hidden" id="endGame">
+        <div class="winner hidden" id="winner">
+          <p class="endgame__message">Haz Ganado!!</p>
+          <p class="winner__message" id="winnerMessage"></p>
+        </div>
+
+        <div class="loser hidden" id="loser">
+          <p class="endgame__message endgame__message--loser">Haz Perdido!!</p>
+          <p class="loser__message" id="loserMessage"></p>
+        </div>
+        <div>
+          <button class="play__button" id="playAgainButton">
+            Jugar otra vez
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
